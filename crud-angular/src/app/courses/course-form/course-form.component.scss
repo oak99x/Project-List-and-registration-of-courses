@@ -1,0 +1,33 @@
+mat-card{
+    max-width: 80%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+mat-card-content{
+    margin-top: 20px;
+    width: 100%;
+    padding: 0px;
+}
+
+mat-toolbar{
+    border-radius: 5px 5px 0px 0px;
+}
+
+.full-width{
+    width: 100%;
+    margin: 0px;
+}
+
+.min-width{
+    width: 100%;
+    min-width: 200px;
+}
+
+.button-space{
+    margin: 15px;
+}
