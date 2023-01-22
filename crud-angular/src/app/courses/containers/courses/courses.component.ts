@@ -4,9 +4,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { ErrorDialogComponent } from './../../shared/components/error-dialog/error-dialog.component';
-import { Course } from './../model/course';
-import { CoursesService } from './../services/courses.service';
+import { ErrorDialogComponent } from '../../../shared/components/error-dialog/error-dialog.component';
+import { Course } from '../../model/course';
+import { CoursesService } from '../../services/courses.service';
 
 @Component({
   selector: 'app-courses',
@@ -15,13 +15,9 @@ import { CoursesService } from './../services/courses.service';
 })
 
 
-export class CoursesComponent implements OnInit{
+export class CoursesComponent {
 
   courses$: Observable<Course[]>;
-
-  // displayedColumns = ['name', 'category', 'actions'];
-
-  //coursesService: CoursesService;
 
   constructor(
     private coursesService: CoursesService,
@@ -47,10 +43,5 @@ export class CoursesComponent implements OnInit{
   onAdd(){
     this.router.navigate(['new'], {relativeTo: this.route})
   }
-
-  ngOnInit(): void {
-
-  }
-
 
 }
