@@ -1,5 +1,6 @@
 ## Projeto de Cadastro de Cursos
-Este projeto é um sistema web de cadastro de cursos.
+
+Este projeto é uma aplicação web para cadastro de cursos. Ela usa Angular no front-end para criar a parte visual e interativa da aplicação, onde os usuários podem ver e interagir com a página. Ela usa Java com Spring Boot no back-end para gerenciar e armazenar as informações dos cursos. O usuário poderá ver a lista de cursos, cadastrar novos cursos, editar e excluir cursos já existentes. A aplicação também valida os dados do formulário de cadastro para garantir que todas as informações necessárias estejam preenchidas e sejam válidas.
 
 ### Funcionalidades
 - Cadastro de cursos, incluindo nome e descrição.
